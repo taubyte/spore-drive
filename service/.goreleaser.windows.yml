@@ -1,0 +1,51 @@
+version: 2
+project_name: spore-drive-service
+release:
+  # Repo in which the release will be created.
+  github:
+    owner: taubyte
+    name: spore-drive
+
+  # Control the draft and prerelease settings
+  draft: false
+  replace_existing_draft: false
+  prerelease: auto
+
+  # Release naming and SCM interaction
+  name_template: ""
+  disable: false
+  skip_upload: false
+
+builds:
+  - id: "windows"
+    main: "./tools/spore-drive/service"
+    binary: "drive"
+    goos:
+      - windows
+    goarch:
+      - amd64
+    env:
+      - CGO_ENABLED=0
+      - GOAMD64=v2
+    tags:
+      - windows
+    gcflags:
+      - all=-l
+    ldflags:
+      - -s -w
+
+changelog:
+  disable: true
+
+checksum:
+  disable: true
+
+archives:
+  - files:
+      - none*
+
+upx:
+  - enabled: true
+    brute: true
+    compress: best
+    lzma: true
