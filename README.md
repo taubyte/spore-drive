@@ -28,30 +28,16 @@ Python:
 pip install spore-drive
 ```
 
+## Boilerplates
+
+- [TypeScript](https://github.com/taubyte/spore-drive-boilerplate)
+- [Python](https://github.com/taubyte/tau/tree/main/pkg/spore-drive/clients/py/example)
+
+
 ## Documentation
 
 For detailed installation instructions, configuration options, and deployment guides, see the [official Spore Drive documentation](https://tau.how/platform/spore-drive/).
 
-## Server Requirements
-
-- Linux servers with SSH access on port 22
-- User account with sudo/root privileges
-- SSH key authentication enabled
-
-## How It Works
-
-Spore Drive is an RPC service that runs on your local machine. It uses SSH to connect to your servers and deploy Tau without requiring agents on target machines. For implementation details, see the [Python client source code](https://github.com/taubyte/tau/tree/main/pkg/spore-drive/clients/py).
-
-## Examples
-
-- **TypeScript/Node.js**: [Spore Drive Boilerplate](https://github.com/taubyte/spore-drive-boilerplate)
-- **Python**: [Python Client Example](https://github.com/taubyte/tau/tree/main/pkg/spore-drive/clients/py/example)
-
-## Resources
-
-- [Official Spore Drive Documentation](https://tau.how/platform/spore-drive/)
-- [Boilerplate Example](https://github.com/taubyte/spore-drive-boilerplate)
-- [Tau Documentation](https://tau.how)
 
 ## License
 
