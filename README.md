@@ -18,44 +18,15 @@ Turn a list of servers into a fully-configured Taubyte cloud with code. No manua
 
 **Install Spore Drive:**
 
+Node.js/TypeScript:
 ```bash
 npm install @taubyte/spore-drive typescript tsx --save-dev
 ```
 
-**Basic Usage:**
-
-```typescript
-import { Config, Drive, TauLatest, CourseConfig } from "@taubyte/spore-drive";
-
-const config = new Config("./config");
-await config.init();
-
-// Configure domains, SSH, hosts, and shapes
-// ... (see documentation)
-
-const drive = new Drive(config, TauLatest);
-await drive.init();
-const course = await drive.plot(new CourseConfig(["compute"]));
-await course.displace();
+Python:
+```bash
+pip install spore-drive
 ```
-
-**Configuration:**
-
-1. Create a `hosts.csv` file with your servers:
-   ```csv
-   hostname,public_ip
-   node1.example.com,203.0.113.1
-   node2.example.com,203.0.113.2
-   ```
-
-2. Set up your `.env` file:
-   ```bash
-   SSH_KEY=ssh-key.pem
-   SERVERS_CSV_PATH=hosts.csv
-   SSH_USER=ssh-user
-   ROOT_DOMAIN=example.com
-   GENERATED_DOMAIN=g.example.com
-   ```
 
 ## Documentation
 
@@ -66,6 +37,15 @@ For detailed installation instructions, configuration options, and deployment gu
 - Linux servers with SSH access on port 22
 - User account with sudo/root privileges
 - SSH key authentication enabled
+
+## How It Works
+
+Spore Drive is an RPC service that runs on your local machine. It uses SSH to connect to your servers and deploy Tau without requiring agents on target machines. For implementation details, see the [Python client source code](https://github.com/taubyte/tau/tree/main/pkg/spore-drive/clients/py).
+
+## Examples
+
+- **TypeScript/Node.js**: [Spore Drive Boilerplate](https://github.com/taubyte/spore-drive-boilerplate)
+- **Python**: [Python Client Example](https://github.com/taubyte/tau/tree/main/pkg/spore-drive/clients/py/example)
 
 ## Resources
 
