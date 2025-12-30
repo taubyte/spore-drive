@@ -1,5 +1,4 @@
-
-<img width="2664" height="1364" alt="Frame 240 (1)" src="https://github.com/user-attachments/assets/6a70ae47-0c5b-4f96-b23f-2623c2fe6ff7" />
+<img width="2664" height="1364" alt="Frame 240 (3)" src="https://github.com/user-attachments/assets/bea34213-6de0-47d9-a1c1-82430a3ea586" />
 
 # Spore Drive
 
@@ -42,3 +41,4 @@ For detailed installation instructions, configuration options, and deployment gu
 ## License
 
 BSD-3-Clause
+
