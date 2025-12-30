@@ -1,5 +1,5 @@
-![Taubyte Spore Drive architecture diagram showing automated deployment of multiple servers into a decentralized Taubyte cloud using host files, IP addresses, and credentials](https://github.com/user-attachments/assets/0213a64e-498a-4e03-aaa0-0f4ef12e6f73)
 
+<img width="2664" height="1364" alt="Frame 240 (1)" src="https://github.com/user-attachments/assets/6a70ae47-0c5b-4f96-b23f-2623c2fe6ff7" />
 
 # Spore Drive
 
@@ -18,8 +18,8 @@ It installs, configures, and connects all servers into a single **Taubyte cloud*
 ## What it actually does
 - Provisions multiple servers at once
 - Installs Tau on each node
-- Connects nodes into a decentralized Taubyte fabric
-- Turns raw servers into a working cloud
+- Connects nodes into a meshed peer-to-peer network
+- Plug in your servers and watch them become a cloud.
 
 No manual node setup.  
 No control plane to babysit.
@@ -39,5 +39,6 @@ No control plane to babysit.
 
 ## In one sentence
 **Spore Drive turns a list of servers into a Taubyte cloud.**
+
 
 
